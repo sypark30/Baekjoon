@@ -1,0 +1,5 @@
+n = int(input())
+scores = list(map(int, input().split()))
+scores = list(map(lambda x: x / max(scores) * 100, scores))
+average = sum(scores) / len(scores)
+print(f"{average}")
